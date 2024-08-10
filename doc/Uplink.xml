@@ -9,7 +9,7 @@
       <orgname>ONVIF™</orgname>
       <uri>www.onvif.org</uri>
     </author>
-    <pubdate>Feb 2024 Draft</pubdate>
+    <pubdate>June 2024</pubdate>
     <mediaobject>
       <imageobject>
         <imagedata fileref="media/logo.png" contentwidth="60mm" />
@@ -306,7 +306,7 @@
         <title>Introduction</title>
         <para>The ONVIF Media Service Specification and the ONVIF Streaming Specification define
           various mechanism for streaming Video, Audio and Metadata. This specification defines how
-          to apply streaming over http/2. Usage of other communication mechanism like UDP unicast
+          to apply streaming over http/2. Usage of other communication mechanisms like UDP unicast
           and multicast are outside of the scope of this specification.</para>
       </section>
       <section>
@@ -354,6 +354,9 @@
         <listitem>
           <para>AuthorizationServer :  JWTConfiguration token referring to an Authorization server
             that provides JWT token to authorize with the uplink server.</para>
+        </listitem>
+        <listitem>
+          <para>Error : Optional user readable error information (readonly).</para>
         </listitem>
       </itemizedlist>
       <para>The device shall interpret the field RemoteAddress as key to a specific uplink
